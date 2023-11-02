@@ -85,7 +85,7 @@ namespace lab1Calculator
             }
 
             double result = Calculator.Calculate(_firstNumber, _secondNumber, _selectedOperation);
-            resultLabel.Text = result.ToString();
+            resultLabel.Text = result.ToString().Replace(",", ".");
 
             _firstNumber = result;
             _currentState = StateCalculator.inputSecondNumber;
@@ -96,7 +96,7 @@ namespace lab1Calculator
             Button btn = (Button)sender;
             double number = StringToNumber(resultLabel.Text);
             double result = Calculator.Calculate(number, btn.Text);
-            resultLabel.Text = result.ToString();
+            resultLabel.Text = result.ToString().Replace(",", ".");
         }
 
         private void clearButton_Clicked(object sender, EventArgs e)
