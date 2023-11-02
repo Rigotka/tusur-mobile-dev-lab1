@@ -1,2 +1,2 @@
 # lab1Calculator
-https://media.giphy.com/media/VdSvNB6jzL934xDqtA/giphy.gif
+![](https://github.com/Rigotka/tusur-mobile-dev-lab1/blob/master/demo.gif)
